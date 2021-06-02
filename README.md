@@ -1,11 +1,12 @@
-# Expanding Cards
+# TechnoTool
 
-TITLE - Expanding Cards
+TITLE - TechnoTool
 
-About - Expanding card widget
+About - TechnoTool - website for tool trading company.
 
 TECHNOLOGIES USED:
-- HTML5 
+
+- HTML5
 - Google Fonts
 - CSS3 with Sass
 - JavaScript

@@ -59,6 +59,27 @@ body {
     color: var(--color-primary);
     background-color: var(--color-secondary-light);
   }
+
+  .top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    padding: 5px;
+    // display: none;
+    transform: translateY(550%);
+    transition: transform 1s ease-in-out;
+
+    i {
+      font-size: 4rem;
+      color: var(--color-secondary);
+    }
+
+    &.active {
+      // display: block;
+      transform: translateY(0);
+    }
+  }
 }
 
 @media (max-width: 750px) {

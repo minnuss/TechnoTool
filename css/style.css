@@ -474,6 +474,25 @@ body .btn:hover {
   background-color: var(--color-secondary-light);
 }
 
+body .top {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  padding: 5px;
+  transform: translateY(550%);
+  transition: transform 1s ease-in-out;
+}
+
+body .top i {
+  font-size: 4rem;
+  color: var(--color-secondary);
+}
+
+body .top.active {
+  transform: translateY(0);
+}
+
 @media (max-width: 750px) {
   body .container {
     padding: 10px;
