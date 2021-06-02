@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@import '01_nav.scss';
+@import '02_hero.scss';
+@import '03_products.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  font-family: 'Jost', sans-serif; // 'Montserrat', 'Roboto', 'Poppins';
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-font-primary: #fefeff;
+  --color-bg-primary: #f4f4f4;
+  --color-primary: #014494;
+  --color-primary-light: #0250af;
+  --color-secondary: #ee7d00;
+  --color-secondary-light: #fd9825;
+  --font-h1: clamp(3.8rem, 3vw, 4.8rem);
+  --font-h2: clamp(3.5rem, 3vw, 4rem);
+  --font-h3: clamp(2rem, 3vw, 2.5rem);
+  --font-size: 1.6rem;
+  --font-btn-size: 1.5rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  overflow-x: hidden;
+
+  .container {
+    max-width: 1111px;
+    margin: 50px auto 0;
+  }
+
+  .btn {
+    background: var(--color-secondary);
+    color: var(--color-font-primary);
+    font-size: var(--font-btn-size);
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 1.5rem 3rem;
+    border: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary-light);
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    .container {
+      padding: 10px;
+      margin-top: 10px;
+    }
+  }
+}

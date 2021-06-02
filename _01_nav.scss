@@ -1,0 +1,210 @@
+.nav {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
+
+  border-radius: 15px;
+  color: var(--color-font-primary);
+  background-color: var(--color-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 2;
+
+  .logo {
+    font-size: var(--font-h3);
+    font-weight: 300;
+
+    a {
+      color: var(--font-primary);
+      text-decoration: none;
+    }
+  }
+
+  .nav__box {
+    .link__list {
+      display: flex;
+
+      li {
+        display: block;
+        padding: 1.2rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+
+        .nav__link {
+          color: #fff;
+          text-decoration: none;
+          font-size: var(--font-size);
+          text-transform: uppercase;
+          position: relative;
+          transition: all 0.5s ease-in-out;
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-bg-primary);
+            transform: scale(0);
+            transform-origin: center;
+            transition: all 0.5s ease-in-out;
+          }
+
+          &:hover::before {
+            transform: scale(1);
+          }
+        }
+
+        &:hover,
+        &:focus-within {
+          // background-color: var(--color-primary-light);
+          cursor: pointer;
+          // text-decoration: underline;
+          position: relative;
+        }
+
+        &:focus-within a {
+          outline: none;
+        }
+
+        .dropdown {
+          position: absolute;
+          background-color: var(--color-primary);
+          visibility: hidden;
+          opacity: 0;
+          display: none;
+          pointer-events: none;
+          margin-top: 1rem;
+          left: 0;
+          transition: all 0.5s ease;
+        }
+
+        &:hover > ul,
+        &:focus-within > ul,
+        & ul:hover,
+        & ul:focus {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          pointer-events: all;
+        }
+
+        .dropdown li {
+          clear: both;
+          min-width: max-content;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .hamb-box {
+    width: 28px;
+    height: 21px;
+    cursor: pointer;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .line {
+      width: 28px;
+      height: 3px;
+      background-color: #fff;
+      transition: 0.3s ease-in-out;
+    }
+
+    &.active {
+      .line1 {
+        transform: rotate(45deg) translate(7px, 6px);
+      }
+
+      .line2 {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      .line3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .nav {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    position: relative;
+    .nav__box {
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      right: 0;
+      top: 0;
+      height: 90vh;
+      border-radius: 15% 0 0 30%;
+      width: 250px;
+      background-color: var(--color-primary);
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+      z-index: 50;
+
+      &.active {
+        transform: translateX(0);
+      }
+
+      .link__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+
+        li {
+          padding-left: 0;
+          margin-left: 0;
+          padding: 0;
+
+          .dropdown {
+            position: initial;
+            visibility: visible;
+            opacity: 1;
+            display: block;
+            pointer-events: all;
+            margin-top: 0;
+            padding: 0;
+
+            li {
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .link__list {
+        display: block;
+        margin: 30px 0;
+
+        li > * {
+          display: block;
+          margin: 30px 0;
+        }
+      }
+    }
+
+    .hamb-box {
+      display: flex;
+      z-index: 100;
+    }
+  }
+}
