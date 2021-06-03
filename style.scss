@@ -5,6 +5,8 @@
 @import '03_brands.scss';
 @import '04_products.scss';
 @import '05_catalogs.scss';
+@import '06_contact.scss';
+@import '07_footer.scss';
 
 *,
 *::after,
@@ -54,11 +56,15 @@ body {
     font-size: var(--font-btn-size);
     text-transform: uppercase;
     border-radius: 8px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 1.5rem 3rem;
     border: none;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
     cursor: pointer;
+
+    &:active {
+      transform: scale(0.98);
+    }
   }
 
   .btn:hover {
@@ -68,13 +74,14 @@ body {
 
   .top {
     position: fixed;
-    bottom: 50px;
+    bottom: 70px;
     right: 30px;
     cursor: pointer;
     padding: 5px;
     // display: none;
     transform: translateY(550%);
     transition: transform 1s ease-in-out;
+    z-index: 100;
 
     i {
       font-size: 4rem;
