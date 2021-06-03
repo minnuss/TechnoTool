@@ -2,7 +2,9 @@
 
 @import '01_nav.scss';
 @import '02_hero.scss';
-@import '03_products.scss';
+@import '03_brands.scss';
+@import '04_products.scss';
+@import '05_catalogs.scss';
 
 *,
 *::after,
@@ -30,6 +32,10 @@ html {
   --font-h3: clamp(2rem, 3vw, 2.5rem);
   --font-size: 1.6rem;
   --font-btn-size: 1.5rem;
+  --color-proline-red: #dd052b;
+  --color-proline-grey: #4d4f53;
+  --color-proline-black: #030406;
+  --color-proline-white: #ffffff;
 }
 
 body {

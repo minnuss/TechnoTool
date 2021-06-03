@@ -29,8 +29,8 @@
                     <li><a href="#home" class="nav__link">Početna</a></li>
                     <li><a href="#products" class="nav__link dropbtn">Proizvodi</a>
                         <ul class="dropdown">
-                            <li><a href="#" class="nav__link">Brendovi</a></li>
-                            <li><a href="#" class="nav__link">Katalozi</a></li>
+                            <li><a href="#brands" class="nav__link">Brendovi</a></li>
+                            <li><a href="#catalogs" class="nav__link">Katalozi</a></li>
                             <li><a href="#" class="nav__link">Akcije</a></li>
                         </ul>
                     </li>
@@ -68,11 +68,44 @@
                     <a href="#products" class="card__btn btn">Saznajte više</a>
                 </div>
                 <div class="tool-div">
-                    <img src="img/hero-img.jpg" class="card__image" alt="">
+                    <img src="img/hero/1.jpg" class="card__image" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- BRANDS -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="brands__box">
+                <div class="brands__img--bg">
+                    <h3>Brendovi</h3>
+                </div>
+                <div class="brands__cards">
+                    <div class="brand__card">
+                        <h3>Technolit</h3>
+                        <p>TECHNOLIT GmbH, koji je 1979. godine osnovao Vilhelm Lang u svojoj garaži kod kuće, sada ima
+                            više od 1.800 zaposlenih u inostranstvu i inostranstvu.</p>
+                        <p>Njihovo sedište se nalazi u Großenluderu, u blizini baroknog grada Fulda. Tamo, otprilike 300
+                            ljudi radi na površini većoj od 50.000 m2.</p>
+                        <a href="https://www.technolit.de/en/about-us/" class="card__btn btn">Saznajte više</a>
+                    </div>
+
+                    <div class="brand__card">
+                        <h3>Proline</h3>
+                        <p>Brend PROLINE stvorili su stručnjaci sa iskustvom u ručnim alatima. Ponuđeni proizvodi i
+                            rešenja namenjeni su svim kupcima (profesionalcima i kućnim radnicima). Alati PROLINE
+                            omogućavaju brz i lak rad.</p>
+                        <p>PROLINE alati - izdržljivi i precizno izrađeni - projektovani zajedno sa pravilom „dobar alat
+                            vam omogućava bolji i lakši rad“. Testirani u ekstremnim uslovima - tvrdi postupak odabira
+                            garantuje najviši kvalitet.</p>
+                        <a href="https://www.proline-tools.com.pl/en/main/brand" class="card__btn btn">Saznajte više</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PRODUCTS -->
     <section class="products" id="products">
         <div class="container">
@@ -130,12 +163,32 @@
         </div>
     </section>
 
+    <section class="catalogs" id="catalogs">
+        <div class="container">
+            <div class="catalog__box">
+                <div class="catalog__img--bg">
+                    <h3>Katalozi</h3>
+                </div>
+                <div class="catalog__cards">
+                    <div class="catalog__card">
+                        <h3>Technolit katalog</h3>
+                        <a href="https://www.technolit.de/epaper/gb/#764" class="card__btn btn">Otvori katalog</a>
+                    </div>
+                    <div class="catalog__card">
+                        <h3>Proline katalog</h3>
+                        <a href="http://catalogue.profix.com.pl/10/" class="card__btn btn">Otvori katalog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="top">
         <a href="#home"><i class="far fa-caret-square-up"></i></a>
     </div>
 
-
+    <script src="js/hero.js"></script>
     <script src="js/HambMenu.js"></script>
     <script src="js/Top.js"></script>
 </body>
