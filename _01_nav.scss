@@ -152,9 +152,10 @@
       align-items: center;
       right: 0;
       top: 0;
-      height: 90vh;
-      border-radius: 15% 0 0 30%;
-      width: 250px;
+      height: 100vh;
+      // border-radius: 15% 0 0 30%;
+      // width: 250px;
+      width: 100vw;
       background-color: var(--color-primary);
       transform: translateX(100%);
       transition: transform 0.5s ease-in-out;
