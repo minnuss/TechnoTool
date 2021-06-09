@@ -258,6 +258,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  position: relative;
 }
 
 .card .tool-div .card__image {
@@ -365,6 +366,7 @@
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 7px;
 }
 
 .brands__box .brands__cards {
@@ -476,6 +478,7 @@
   min-width: 2.8rem;
   height: 26vh;
   border-radius: 10px;
+  border: 1px solid #b3d5ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -502,6 +505,7 @@
   font-size: var(--font-h3);
   padding: 5px 10px;
   background: var(--color-primary);
+  border-radius: 7px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
@@ -516,7 +520,7 @@
 }
 
 .products-grid .tool2 {
-  background: url(../img/products/pnodvijac.jpg) no-repeat center/cover;
+  background: url("../img/products/Pneumatski alati.jpg") no-repeat center/cover;
 }
 
 .products-grid .tool3 {
@@ -524,39 +528,39 @@
 }
 
 .products-grid .tool4 {
-  background: url(../img/products/setovialata.jpg) no-repeat center/cover;
+  background: url("../img/products/Setovi alata.jpg") no-repeat center/cover;
 }
 
 .products-grid .tool5 {
-  background: url(../img/products/rucnialat.jpg) no-repeat center/cover;
+  background: url("../img/products/Rucni alat.jpg") no-repeat center/cover;
 }
 
 .products-grid .tool6 {
-  background: url(../img/products/reznaploca.jpg) no-repeat center/cover;
+  background: url("../img/products/Obrada materijala.jpg") no-repeat center/cover;
 }
 
 .products-grid .tool7 {
-  background: url(../img/products/burgije.jpg) no-repeat center/cover;
+  background: url(../img/products/Burgije.jpg) no-repeat center/cover;
 }
 
 .products-grid .tool8 {
-  background: url(../img/products/sijalice.jpg) no-repeat center/cover;
+  background: url(../img/products/Sijalice.jpg) no-repeat center/cover;
 }
 
 .products-grid .tool9 {
-  background: url(../img/products/hemija.jpg) no-repeat center/cover;
+  background: url(../img/products/Hemija.jpg) no-repeat center/cover;
 }
 
 .products-grid .tool10 {
-  background: url(../img/products/htz.jpg) no-repeat center/cover;
+  background: url(../img/products/HTZ.jpg) no-repeat center/cover;
 }
 
 .products-grid .tool11 {
-  background: url(../img/products/vijci.jpg) no-repeat center/cover;
+  background: url(../img/products/Vijci.jpg) no-repeat center/cover;
 }
 
 .products-grid .tool12 {
-  background: url(../img/products/tiplovi.jpg) no-repeat center/cover;
+  background: url(../img/products/Tiplovi.jpg) no-repeat center/cover;
 }
 
 .catalog__box {
@@ -587,6 +591,7 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 7px;
 }
 
 .catalog__box .catalog__cards {

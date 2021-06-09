@@ -7,6 +7,10 @@ const imagesArray = [
     'img/hero/3.jpg',
     'img/hero/4.jpg',
     'img/hero/5.jpg',
+    'img/hero/6.jpg',
+    'img/hero/7.jpg',
+    'img/hero/8.jpg',
+    'img/hero/9.jpg',
 ]
 
 // CHECK FOR NEW RANDOM NUMBER ALWAYS, SO THEY DONT REPEAT AS LAST ONE
