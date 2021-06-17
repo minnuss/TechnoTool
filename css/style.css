@@ -563,6 +563,65 @@
   background: url(../img/products/Tiplovi.jpg) no-repeat center/cover;
 }
 
+.texa__box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texa__box .texa__diagnostic {
+  width: 50%;
+  min-height: 470px;
+  background: url(../img/products/texa-diagnostic.jpeg) no-repeat center/cover;
+  position: relative;
+}
+
+.texa__box .texa__station {
+  width: 50%;
+  min-height: 470px;
+  background: url(../img/products/texa-station.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+.texa__box .texa--logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 10%;
+  border-radius: 20px;
+}
+
+.texa__box .texa--logo img {
+  width: 120px;
+  border-radius: 20px;
+}
+
+.texa__box h3 {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  font-size: var(--font-h3);
+  padding: 5px 10px;
+  background: var(--color-primary);
+  border-radius: 7px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.texa__box h3:hover {
+  background: var(--color-secondary);
+  transform: scale(0.98);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.texa__box h3 a {
+  color: var(--color-font-primary);
+  text-decoration: none;
+}
+
 .catalog__box {
   display: flex;
   justify-content: center;
