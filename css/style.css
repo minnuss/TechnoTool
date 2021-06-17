@@ -589,13 +589,11 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 10%;
-  border-radius: 20px;
+  max-width: 150px;
 }
 
 .texa__box .texa--logo img {
-  width: 120px;
-  border-radius: 20px;
+  width: 100%;
 }
 
 .texa__box h3 {
@@ -620,6 +618,22 @@
 .texa__box h3 a {
   color: var(--color-font-primary);
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .texa__box .texa__diagnostic {
+    width: 100%;
+    min-height: 350px;
+  }
+  .texa__box .texa__station {
+    width: 100%;
+    min-height: 350px;
+  }
+  .texa__box .texa--logo {
+    top: 50%;
+    transform: translate(-50%, -15%);
+    max-width: 125px;
+  }
 }
 
 .catalog__box {
