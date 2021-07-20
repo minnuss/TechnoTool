@@ -9,19 +9,26 @@
   padding: 0.5rem 4rem;
   border-radius: 15px;
   color: var(--color-font-primary);
-  background-color: var(--color-primary);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(87deg, white 0%, #014494 60%);
   z-index: 2;
 }
 
 .nav .logo {
   font-size: var(--font-h3);
   font-weight: 300;
+  padding: 4px 7px 0;
 }
 
 .nav .logo a {
   color: var(--font-primary);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .logo a img {
+  min-width: 220px;
 }
 
 .nav .nav__box .link__list {
