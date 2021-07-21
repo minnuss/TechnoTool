@@ -9,6 +9,7 @@
   padding: 0.5rem 4rem;
   border-radius: 15px;
   color: var(--color-font-primary);
+  background-color: #014494;
   background: linear-gradient(87deg, white 0%, #014494 60%);
   z-index: 2;
 }
@@ -17,18 +18,20 @@
   font-size: var(--font-h3);
   font-weight: 300;
   padding: 4px 7px 0;
+  border-radius: 10px;
 }
 
 .nav .logo a {
-  color: var(--font-primary);
+  color: #014494;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav .logo a img {
-  min-width: 220px;
+.nav .logo a svg {
+  width: clamp(140px, 20vw, 220px);
+  filter: drop-shadow(0.1px 0.1px 30px white);
 }
 
 .nav .nav__box .link__list {
@@ -144,6 +147,7 @@
 @media (max-width: 650px) {
   .nav {
     position: relative;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
   }
   .nav .nav__box {
     position: fixed;
