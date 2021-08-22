@@ -71,6 +71,43 @@
         margin-left: 10px;
         color: var(--color-primary);
       }
+
+      .social__icons {
+        transition: all 0.3s ease-in-out;
+
+        .facebook--icon:hover {
+          i {
+            color: #3b5998;
+          }
+        }
+
+        .twitter--icon:hover {
+          i {
+            color: #1da1f2;
+          }
+        }
+
+        .instagram--icon:hover {
+          i {
+            color: #fff;
+            background: #d6249f;
+            background: radial-gradient(
+              circle at 30% 107%,
+              #fdf497 0%,
+              #fdf497 5%,
+              #fd5949 45%,
+              #d6249f 60%,
+              #285aeb 90%
+            );
+          }
+        }
+
+        .youtube--icon:hover {
+          i {
+            color: #ff0000;
+          }
+        }
+      }
     }
 
     .form__box {
@@ -126,6 +163,10 @@
         height: initial;
         min-height: 200px;
         width: 100%;
+
+        .social__icons {
+          margin-bottom: 10px;
+        }
       }
 
       .form__box {

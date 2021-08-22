@@ -359,10 +359,18 @@
   width: 100%;
   max-height: 600px;
   height: 100vh;
-  background: url(../img/brands/brands-bg2.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
+  background: url(../img/brands/brands-bg2.webp) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+@supports not (background: url(../img/brands/brands-bg2.webp) no-repeat) {
+  .brands__box .brands__img--bg {
+    background: url(../img/brands/brands-bg2.jpg) no-repeat;
+  }
 }
 
 .brands__box .brands__img--bg h3 {
@@ -526,52 +534,91 @@
   text-decoration: none;
 }
 
+@supports not (background: url("../img/products/Auto alati.webp") no-repeat center/cover) {
+  .products-grid .tool1 {
+    background: url("../img/products/Auto alati.jpg") no-repeat center/cover;
+  }
+  .products-grid .tool2 {
+    background: url("../img/products/Pneumatski alati.jpg") no-repeat center/cover;
+  }
+  .products-grid .tool3 {
+    background: url(../img/products/Lepkovi.jpg) no-repeat center/cover;
+  }
+  .products-grid .tool4 {
+    background: url("../img/products/Setovi alata.jpg") no-repeat center/cover;
+  }
+  .products-grid .tool5 {
+    background: url("../img/products/Rucni alat.jpg") no-repeat center/cover;
+  }
+  .products-grid .tool6 {
+    background: url("../img/products/Obrada materijala.jpg") no-repeat center/cover;
+  }
+  .products-grid .tool7 {
+    background: url(../img/products/Burgije.jpg) no-repeat center/cover;
+  }
+  .products-grid .tool8 {
+    background: url(../img/products/Sijalice.jpg) no-repeat center/cover;
+  }
+  .products-grid .tool9 {
+    background: url(../img/products/Hemija.jpg) no-repeat center/cover;
+  }
+  .products-grid .tool10 {
+    background: url("../img/products/Hemijsko tehnicki proizvodi.jpg") no-repeat center/cover;
+  }
+  .products-grid .tool11 {
+    background: url(../img/products/Vijci.jpg) no-repeat center/cover;
+  }
+  .products-grid .tool12 {
+    background: url("../img/products/Hemija za ciscenje.jpg") no-repeat center/cover;
+  }
+}
+
 .products-grid .tool1 {
-  background: url("../img/products/Auto alati.jpg") no-repeat center/cover;
+  background: url("../img/products/Auto alati.webp") no-repeat center/cover;
 }
 
 .products-grid .tool2 {
-  background: url("../img/products/Pneumatski alati.jpg") no-repeat center/cover;
+  background: url("../img/products/Pneumatski alati.webp") no-repeat center/cover;
 }
 
 .products-grid .tool3 {
-  background: url(../img/products/Lepkovi.jpg) no-repeat center/cover;
+  background: url(../img/products/Lepkovi.webp) no-repeat center/cover;
 }
 
 .products-grid .tool4 {
-  background: url("../img/products/Setovi alata.jpg") no-repeat center/cover;
+  background: url("../img/products/Setovi alata.webp") no-repeat center/cover;
 }
 
 .products-grid .tool5 {
-  background: url("../img/products/Rucni alat.jpg") no-repeat center/cover;
+  background: url("../img/products/Rucni alat.webp") no-repeat center/cover;
 }
 
 .products-grid .tool6 {
-  background: url("../img/products/Obrada materijala.jpg") no-repeat center/cover;
+  background: url("../img/products/Obrada materijala.webp") no-repeat center/cover;
 }
 
 .products-grid .tool7 {
-  background: url(../img/products/Burgije.jpg) no-repeat center/cover;
+  background: url(../img/products/Burgije.webp) no-repeat center/cover;
 }
 
 .products-grid .tool8 {
-  background: url(../img/products/Sijalice.jpg) no-repeat center/cover;
+  background: url(../img/products/Sijalice.webp) no-repeat center/cover;
 }
 
 .products-grid .tool9 {
-  background: url(../img/products/Hemija.jpg) no-repeat center/cover;
+  background: url(../img/products/Hemija.webp) no-repeat center/cover;
 }
 
 .products-grid .tool10 {
-  background: url("../img/products/Hemijsko tehnicki proizvodi.jpg") no-repeat center/cover;
+  background: url("../img/products/Hemijsko tehnicki proizvodi.webp") no-repeat center/cover;
 }
 
 .products-grid .tool11 {
-  background: url(../img/products/Vijci.jpg) no-repeat center/cover;
+  background: url(../img/products/Vijci.webp) no-repeat center/cover;
 }
 
 .products-grid .tool12 {
-  background: url("../img/products/Hemija za ciscenje.jpg") no-repeat center/cover;
+  background: url("../img/products/Hemija za ciscenje.webp") no-repeat center/cover;
 }
 
 .texa__box {
@@ -593,6 +640,23 @@
   min-height: 470px;
   background: url(../img/products/texa-station.jpg) no-repeat center/cover;
   position: relative;
+}
+
+@supports not (background: url(../img/products/texa-station.webp) no-repeat center/cover) {
+  .texa__box .texa__diagnostic {
+    background: url(../img/products/texa-diagnostic.jpeg) no-repeat center/cover;
+  }
+  .texa__box .texa__station {
+    background: url(../img/products/texa-station.jpg) no-repeat center/cover;
+  }
+}
+
+.texa__box .texa__diagnostic {
+  background: url(../img/products/texa-diagnostic.webp) no-repeat center/cover;
+}
+
+.texa__box .texa__station {
+  background: url(../img/products/texa-station.webp) no-repeat center/cover;
 }
 
 .texa__box .texa--logo {
@@ -657,10 +721,18 @@
 .catalog__box .catalog__img--bg {
   width: 50%;
   height: 500px;
-  background: url(../img/catalogs/catalogs-bg.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
+  background: url(../img/catalogs/catalogs-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+@supports not (background: url(../img/catalogs/catalogs-bg.webp) no-repeat) {
+  .catalog__box .catalog__img--bg {
+    background: url(../img/catalogs/catalogs-bg.jpg) no-repeat;
+  }
 }
 
 .catalog__box .catalog__img--bg h3 {
@@ -719,12 +791,24 @@
   opacity: 1;
 }
 
+@supports not (background: url(../img/catalogs/technolit.webp) no-repeat center/cover) {
+  .catalog__box .catalog__cards .catalog__card:nth-child(1) {
+    background: url(../img/catalogs/technolit.jpg) no-repeat center/cover;
+  }
+}
+
 .catalog__box .catalog__cards .catalog__card:nth-child(1) {
-  background: url(../img/catalogs/technolit.jpg) no-repeat center/cover;
+  background: url(../img/catalogs/technolit.webp) no-repeat center/cover;
+}
+
+@supports not (background: url(../img/catalogs/proline.webp) no-repeat center/cover) {
+  .catalog__box .catalog__cards .catalog__card:nth-child(2) {
+    background: url(../img/catalogs/proline.jpg) no-repeat center/cover;
+  }
 }
 
 .catalog__box .catalog__cards .catalog__card:nth-child(2) {
-  background: url(../img/catalogs/proline.jpg) no-repeat center/cover;
+  background: url(../img/catalogs/proline.webp) no-repeat center/cover;
 }
 
 .catalog__box .catalog__cards .catalog__card:nth-child(2) h3 {
@@ -857,6 +941,28 @@
   color: var(--color-primary);
 }
 
+.contact__box .contact__card .contact__info .social__icons {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__box .contact__card .contact__info .social__icons .facebook--icon:hover i {
+  color: #3b5998;
+}
+
+.contact__box .contact__card .contact__info .social__icons .twitter--icon:hover i {
+  color: #1da1f2;
+}
+
+.contact__box .contact__card .contact__info .social__icons .instagram--icon:hover i {
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.contact__box .contact__card .contact__info .social__icons .youtube--icon:hover i {
+  color: #ff0000;
+}
+
 .contact__box .contact__card .form__box {
   width: 50%;
 }
@@ -907,6 +1013,9 @@
     height: initial;
     min-height: 200px;
     width: 100%;
+  }
+  .contact__box .contact__card .contact__info .social__icons {
+    margin-bottom: 10px;
   }
   .contact__box .contact__card .form__box {
     height: initial;

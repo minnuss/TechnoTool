@@ -55,57 +55,115 @@
     }
   }
 
-  //   div:nth-of-type(1) {
-  //     grid-column: 1/3;
-  //   }
+  // !!! ADDING CHECK SUPPORT FOR WEBP IMAGES !!!
 
+  @supports not (
+    background: url('../img/products/Auto alati.webp') no-repeat center / cover
+  ) {
+    // if webp is not supported, load jpeg images
+    .tool1 {
+      background: url('../img/products/Auto alati.jpg') no-repeat center / cover;
+    }
+
+    .tool2 {
+      background: url('../img/products/Pneumatski alati.jpg') no-repeat center /
+        cover;
+    }
+
+    .tool3 {
+      background: url(../img/products/Lepkovi.jpg) no-repeat center / cover;
+    }
+
+    .tool4 {
+      background: url('../img/products/Setovi alata.jpg') no-repeat center /
+        cover;
+    }
+
+    .tool5 {
+      background: url('../img/products/Rucni alat.jpg') no-repeat center / cover;
+    }
+
+    .tool6 {
+      background: url('../img/products/Obrada materijala.jpg') no-repeat center /
+        cover;
+    }
+
+    .tool7 {
+      background: url(../img/products/Burgije.jpg) no-repeat center / cover;
+    }
+
+    .tool8 {
+      background: url(../img/products/Sijalice.jpg) no-repeat center / cover;
+    }
+
+    .tool9 {
+      background: url(../img/products/Hemija.jpg) no-repeat center / cover;
+    }
+
+    .tool10 {
+      background: url('../img/products/Hemijsko tehnicki proizvodi.jpg')
+        no-repeat center / cover;
+    }
+
+    .tool11 {
+      background: url(../img/products/Vijci.jpg) no-repeat center / cover;
+    }
+    .tool12 {
+      background: url('../img/products/Hemija za ciscenje.jpg') no-repeat center /
+        cover;
+    }
+  }
+
+  // else, if webp is supported, load only webp images
   .tool1 {
-    background: url('../img/products/Auto alati.jpg') no-repeat center / cover;
+    background: url('../img/products/Auto alati.webp') no-repeat center / cover;
   }
 
   .tool2 {
-    background: url('../img/products/Pneumatski alati.jpg') no-repeat center /
+    background: url('../img/products/Pneumatski alati.webp') no-repeat center /
       cover;
   }
 
   .tool3 {
-    background: url(../img/products/Lepkovi.jpg) no-repeat center /
-      cover;
+    background: url(../img/products/Lepkovi.webp) no-repeat center / cover;
   }
 
   .tool4 {
-    background: url('../img/products/Setovi alata.jpg') no-repeat center / cover;
+    background: url('../img/products/Setovi alata.webp') no-repeat center /
+      cover;
   }
 
   .tool5 {
-    background: url('../img/products/Rucni alat.jpg') no-repeat center / cover;
+    background: url('../img/products/Rucni alat.webp') no-repeat center / cover;
   }
 
   .tool6 {
-    background: url('../img/products/Obrada materijala.jpg') no-repeat center /
+    background: url('../img/products/Obrada materijala.webp') no-repeat center /
       cover;
   }
 
   .tool7 {
-    background: url(../img/products/Burgije.jpg) no-repeat center / cover;
+    background: url(../img/products/Burgije.webp) no-repeat center / cover;
   }
 
   .tool8 {
-    background: url(../img/products/Sijalice.jpg) no-repeat center / cover;
+    background: url(../img/products/Sijalice.webp) no-repeat center / cover;
   }
 
   .tool9 {
-    background: url(../img/products/Hemija.jpg) no-repeat center / cover;
+    background: url(../img/products/Hemija.webp) no-repeat center / cover;
   }
 
   .tool10 {
-    background: url('../img/products/Hemijsko tehnicki proizvodi.jpg') no-repeat center / cover;
+    background: url('../img/products/Hemijsko tehnicki proizvodi.webp')
+      no-repeat center / cover;
   }
 
   .tool11 {
-    background: url(../img/products/Vijci.jpg) no-repeat center / cover;
+    background: url(../img/products/Vijci.webp) no-repeat center / cover;
   }
   .tool12 {
-    background: url('../img/products/Hemija za ciscenje.jpg') no-repeat center / cover;
+    background: url('../img/products/Hemija za ciscenje.webp') no-repeat center /
+      cover;
   }
 }

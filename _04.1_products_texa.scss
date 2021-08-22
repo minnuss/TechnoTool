@@ -19,6 +19,30 @@
     position: relative;
   }
 
+  // CHECK FOR WEBP IMAGES SUPPORT
+  @supports not (
+    background: url(../img/products/texa-station.webp) no-repeat center/cover
+  ) {
+    // if webp not supported, load jpeg
+    .texa__diagnostic {
+      background: url(../img/products/texa-diagnostic.jpeg) no-repeat
+        center/cover;
+    }
+
+    .texa__station {
+      background: url(../img/products/texa-station.jpg) no-repeat center/cover;
+    }
+  }
+
+  // load webp
+  .texa__diagnostic {
+    background: url(../img/products/texa-diagnostic.webp) no-repeat center/cover;
+  }
+
+  .texa__station {
+    background: url(../img/products/texa-station.webp) no-repeat center/cover;
+  }
+
   .texa--logo {
     position: absolute;
     left: 50%;

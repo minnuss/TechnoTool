@@ -8,10 +8,20 @@
   .catalog__img--bg {
     width: 50%;
     height: 500px;
-    background: url(../img/catalogs/catalogs-bg.jpg) no-repeat;
+    // background: url(../img/catalogs/catalogs-bg.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     position: relative;
+
+    @supports not (
+      background: url(../img/catalogs/catalogs-bg.webp) no-repeat
+    ) {
+      background: url(../img/catalogs/catalogs-bg.jpg) no-repeat;
+    }
+
+    background: url(../img/catalogs/catalogs-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: top;
 
     h3 {
       position: relative;
@@ -69,14 +79,28 @@
       }
     }
 
+    @supports not (
+      background: url(../img/catalogs/technolit.webp) no-repeat center/cover
+    ) {
+      .catalog__card:nth-child(1) {
+        background: url(../img/catalogs/technolit.jpg) no-repeat center/cover;
+      }
+    }
+
     .catalog__card:nth-child(1) {
-      //   background-color: var(--color-proline-black);
-      background: url(../img/catalogs/technolit.jpg) no-repeat center/cover;
+      background: url(../img/catalogs/technolit.webp) no-repeat center/cover;
+    }
+
+    @supports not (
+      background: url(../img/catalogs/proline.webp) no-repeat center/cover
+    ) {
+      .catalog__card:nth-child(2) {
+        background: url(../img/catalogs/proline.jpg) no-repeat center/cover;
+      }
     }
 
     .catalog__card:nth-child(2) {
-      //   background-color: var(--color-proline-black);
-      background: url(../img/catalogs/proline.jpg) no-repeat center/cover;
+      background: url(../img/catalogs/proline.webp) no-repeat center/cover;
 
       h3 {
         background-color: var(--color-proline-red);

@@ -9,10 +9,18 @@
     width: 100%;
     max-height: 600px;
     height: 100vh;
-    background: url(../img/brands/brands-bg2.jpg) no-repeat;
+    // background: url(../img/brands/brands-bg2.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     position: relative;
+
+    @supports not (background: url(../img/brands/brands-bg2.webp) no-repeat) {
+      background: url(../img/brands/brands-bg2.jpg) no-repeat;
+    }
+
+    background: url(../img/brands/brands-bg2.webp) no-repeat;
+    background-size: cover;
+    background-position: top;
 
     h3 {
       position: relative;
