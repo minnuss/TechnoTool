@@ -60,6 +60,10 @@
         font-size: var(--font-size);
       }
 
+      span {
+        margin-left: 10px;
+      }
+
       a {
         font-size: var(--font-size);
         text-decoration: none;
@@ -70,10 +74,16 @@
         font-size: var(--font-h3);
         margin-left: 10px;
         color: var(--color-primary);
+        min-width: 25px;
+      }
+
+      .generalije {
+        margin-left: 40px;
       }
 
       .social__icons {
         transition: all 0.3s ease-in-out;
+        margin-top: 15px;
 
         .facebook--icon:hover {
           i {
@@ -88,6 +98,7 @@
         }
 
         .instagram--icon:hover {
+          text-align: center;
           i {
             color: #fff;
             background: #d6249f;
@@ -165,7 +176,11 @@
         width: 100%;
 
         .social__icons {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
+
+          & > * {
+            margin-bottom: 5px;
+          }
         }
       }
 
