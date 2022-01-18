@@ -721,14 +721,22 @@
 }
 
 .catalog__box {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 500px;
 }
 
-.catalog__box .catalog__img--bg {
-  width: 50%;
+.catalog__box .catalog__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: var(--font-size);
+  color: var(--color-font-primary);
+}
+
+.catalog__box .catalog__cards .catalog__card.bg {
   height: 500px;
   background-size: cover;
   background-position: top;
@@ -739,12 +747,12 @@
 }
 
 @supports not (background: url(../img/catalogs/catalogs-bg.webp) no-repeat) {
-  .catalog__box .catalog__img--bg {
+  .catalog__box .catalog__cards .catalog__card.bg {
     background: url(../img/catalogs/catalogs-bg.jpg) no-repeat;
   }
 }
 
-.catalog__box .catalog__img--bg h3 {
+.catalog__box .catalog__cards .catalog__card.bg h3 {
   position: relative;
   display: inline-block;
   margin: 0 auto;
@@ -754,27 +762,16 @@
   padding: 5px 10px;
   background: var(--color-primary);
   top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 7px;
 }
 
-.catalog__box .catalog__cards {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: var(--font-size);
-  color: var(--color-font-primary);
-}
-
 .catalog__box .catalog__cards .catalog__card {
+  flex: 1;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
   padding: 25px;
   text-align: center;
   filter: grayscale(20%);
@@ -782,7 +779,7 @@
 }
 
 .catalog__box .catalog__cards .catalog__card:hover {
-  filter: grayscale(0%);
+  filter: grayscale(0);
 }
 
 .catalog__box .catalog__cards .catalog__card h3 {
@@ -790,6 +787,7 @@
   background-color: var(--color-secondary);
   color: --color-font-primary;
   padding: 2px 4px;
+  border-radius: 4px;
 }
 
 .catalog__box .catalog__cards .catalog__card a {
@@ -801,68 +799,82 @@
 }
 
 @supports not (background: url(../img/catalogs/technolit.webp) no-repeat center/cover) {
-  .catalog__box .catalog__cards .catalog__card:nth-child(1) {
+  .catalog__box .catalog__cards .catalog__card.technolit {
     background: url(../img/catalogs/technolit.jpg) no-repeat center/cover;
   }
 }
 
-.catalog__box .catalog__cards .catalog__card:nth-child(1) {
+.catalog__box .catalog__cards .catalog__card.technolit {
   background: url(../img/catalogs/technolit.webp) no-repeat center/cover;
 }
 
 @supports not (background: url(../img/catalogs/proline.webp) no-repeat center/cover) {
-  .catalog__box .catalog__cards .catalog__card:nth-child(2) {
+  .catalog__box .catalog__cards .catalog__card.proline {
     background: url(../img/catalogs/proline.jpg) no-repeat center/cover;
   }
 }
 
-.catalog__box .catalog__cards .catalog__card:nth-child(2) {
+.catalog__box .catalog__cards .catalog__card.proline {
   background: url(../img/catalogs/proline.webp) no-repeat center/cover;
 }
 
-.catalog__box .catalog__cards .catalog__card:nth-child(2) h3 {
+.catalog__box .catalog__cards .catalog__card.proline h3 {
   background-color: var(--color-proline-red);
 }
 
-.catalog__box .catalog__cards .catalog__card:nth-child(2) a {
+.catalog__box .catalog__cards .catalog__card.proline a {
   text-decoration: none;
   color: var(--color-font-primary);
   background-color: var(--color-proline-red);
 }
 
-.catalog__box .catalog__cards .catalog__card:nth-child(2) a:hover {
+.catalog__box .catalog__cards .catalog__card.proline a:hover {
   background-color: var(--color-proline-grey);
 }
 
-@media (max-width: 950px) {
-  .catalog__box .catalog__cards {
-    width: 100%;
+@supports not (background: url(../img/catalogs/ath.webp) no-repeat center/cover) {
+  .catalog__box .catalog__cards .catalog__card.ath {
+    background: url(../img/catalogs/ath.jpg) no-repeat center/cover;
   }
+}
+
+.catalog__box .catalog__cards .catalog__card.ath {
+  background: url(../img/catalogs/ath.webp) no-repeat center/cover;
+}
+
+.catalog__box .catalog__cards .catalog__card.ath h3 {
+  background-color: var(--color-ath-red);
+}
+
+.catalog__box .catalog__cards .catalog__card.ath a {
+  text-decoration: none;
+  color: var(--color-font-primary);
+  background-color: var(--color-ath-red);
+}
+
+.catalog__box .catalog__cards .catalog__card.ath a:hover {
+  background-color: var(--color-proline-grey);
 }
 
 @media (max-width: 750px) {
-  .catalog__box {
-    width: 100%;
-  }
   .catalog__box .catalog__cards {
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
   }
   .catalog__box .catalog__cards .catalog__card {
-    width: 100%;
-    max-height: 250px;
+    width: 50%;
+    min-height: 350px;
+    flex: auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 460px) {
   .catalog__box {
-    flex-wrap: wrap;
     width: 100%;
-    max-height: 800px;
+    flex-wrap: wrap;
   }
   .catalog__box .catalog__img--bg {
     width: 100%;
-    max-height: 200px;
   }
   .catalog__box .catalog__cards {
     flex-direction: column;
@@ -871,8 +883,7 @@
   .catalog__box .catalog__cards .catalog__card {
     border: 1px solid var(--color-proline-grey);
     margin-top: 5px;
-    width: 70%;
-    max-height: 350px;
+    width: 100%;
   }
 }
 
@@ -960,8 +971,11 @@
 }
 
 .contact__box .contact__card .contact__info .social__icons {
-  transition: all 0.3s ease-in-out;
   margin-top: 15px;
+}
+
+.contact__box .contact__card .contact__info .social__icons i {
+  transition: color 0.3s ease-in-out;
 }
 
 .contact__box .contact__card .contact__info .social__icons .facebook--icon:hover i {
@@ -1005,6 +1019,12 @@
   margin-bottom: 10px;
   background-color: var(--color-bg-primary);
   border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.contact__box .contact__card .form__box form input:active,
+.contact__box .contact__card .form__box form input:focus {
+  outline-color: var(--color-secondary-light);
 }
 
 .contact__box .contact__card .form__box form textarea {
@@ -1014,6 +1034,12 @@
   margin-bottom: 10px;
   background-color: var(--color-bg-primary);
   border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.contact__box .contact__card .form__box form textarea:active,
+.contact__box .contact__card .form__box form textarea:focus {
+  outline-color: var(--color-secondary-light);
 }
 
 .contact__box .contact__card .form__box form .btn {
@@ -1138,6 +1164,7 @@ html {
   --color-proline-grey: #4d4f53;
   --color-proline-black: #030406;
   --color-proline-white: #ffffff;
+  --color-ath-red: #d9213d;
 }
 
 body {

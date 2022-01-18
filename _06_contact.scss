@@ -82,8 +82,11 @@
       }
 
       .social__icons {
-        transition: all 0.3s ease-in-out;
         margin-top: 15px;
+
+        i {
+          transition: color 0.3s ease-in-out;
+        }
 
         .facebook--icon:hover {
           i {
@@ -137,6 +140,12 @@
           margin-bottom: 10px;
           background-color: var(--color-bg-primary);
           border: none;
+          transition: 0.2s ease-in-out;
+        }
+
+        input:active,
+        input:focus {
+          outline-color: var(--color-secondary-light);
         }
 
         textarea {
@@ -146,6 +155,12 @@
           margin-bottom: 10px;
           background-color: var(--color-bg-primary);
           border: none;
+          transition: 0.2s ease-in-out;
+        }
+
+        textarea:active,
+        textarea:focus {
+          outline-color: var(--color-secondary-light);
         }
 
         .btn {
